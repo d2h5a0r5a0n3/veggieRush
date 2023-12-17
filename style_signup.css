@@ -1,0 +1,229 @@
+
+  
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('vegetables.jpg'); /* Replace 'vegetables.jpg' with the actual path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #495057;
+            transition: background 0.5s ease;
+        }
+
+        header {
+            background: linear-gradient(to right, #4caf50, #45a049);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.5s ease, box-shadow 0.3s ease;
+            animation: slideInDown 1s ease;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            transition: color 0.3s ease;
+        }
+
+        nav {
+            background: linear-gradient(to right, #64b864, #5ca45c);
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.5s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f8f9fa;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+            margin-bottom: 60px; /* Add margin to accommodate the footer */
+            transition: background 0.5s ease;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: grid;
+            gap: 1em;
+            max-width: 400px;
+            margin: 0 auto;
+            transition: box-shadow 0.3s ease;
+            animation: fadeIn 1s ease;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 0.8em;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            margin-bottom: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        button:focus {
+            border-color: #4caf50;
+            outline: none;
+        }
+
+        button {
+            background: linear-gradient(to right, #4CAF50, #45a049);
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-size: 1.2em;
+            animation: bounce 0.5s ease;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-15px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #45a049, #4CAF50);
+            transform: scale(1.05);
+        }
+
+        div {
+            text-align: left;
+            margin-top: 1em;
+        }
+
+        #formMessages {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+        }
+
+        /* Social login section styles */
+        #socialLogin {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            animation: fadeIn 1s ease;
+        }
+
+        #socialLogin p {
+            font-weight: bold;
+            color: #495057; /* Darker color */
+        }
+
+        .social-login-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-icon {
+            margin: 0 10px;
+            border: 1px solid #ced4da;
+            border-radius: 50%;
+            padding: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icon img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #f8f9fa;
+        }
+
+        .social-icon:hover img {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: linear-gradient(to right, #4caf50, #45a049);
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.5s ease, box-shadow 0.3s ease;
+        }
+   
